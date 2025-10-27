@@ -1,16 +1,16 @@
 "use client"
 
-import Hero from "@/components/hero"
-import Services from "@/components/services"
-import Testimonials from "@/components/testimonials"
-import Approach from "@/components/approach"
-import TechStack from "@/components/tech-stack"
-import Resources from "@/components/resources"
-import CTA from "@/components/cta"
-import Insights from "@/components/insights";
-import OurTeam from "@/components/our-team";
-import Portfolio from "@/components/protfolio";
-import Pricing from "@/components/pricing";
+import Hero from "@/components/home/hero"
+import Services from "@/components/home/services"
+import Testimonials from "@/components/home/testimonials"
+import Approach from "@/components/home/approach"
+import TechStack from "@/components/home/tech-stack"
+import Resources from "@/components/home/resources"
+import CTA from "@/components/home/cta"
+import Insights from "@/components/home/insights";
+import OurTeam from "@/components/home/our-team";
+import Portfolio from "@/components/home/protfolio";
+import Pricing from "@/components/home/pricing";
 
 export default function Home() {
 

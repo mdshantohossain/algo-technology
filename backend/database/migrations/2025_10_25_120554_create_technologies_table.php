@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('technologies', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('experience')->nullable();
+            $table->text('description')->nullable();
+            $table->string('icon')->nullable();
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }

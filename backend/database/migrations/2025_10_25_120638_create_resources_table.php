@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('resources', function (Blueprint $table) {
             $table->id();
+            $table->foreignIdFor(\App\Models\Service::class)->constrained()->cascadeOnDelete();
+            $table->string('name');
+            $table->string('description');
+            $table->text('image')->nullable();
             $table->timestamps();
         });
     }
