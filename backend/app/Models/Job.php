@@ -9,4 +9,8 @@ class Job extends Model
 {
     /** @use HasFactory<\Database\Factories\JobFactory> */
     use HasFactory;
+
+    protected $guarded = ['id'];
+
+    protected $table = "job_listings";
 }

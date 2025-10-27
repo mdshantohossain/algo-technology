@@ -9,4 +9,6 @@ class Plan extends Model
 {
     /** @use HasFactory<\Database\Factories\PlanFactory> */
     use HasFactory;
+
+    protected $guarded = ['id'];
 }

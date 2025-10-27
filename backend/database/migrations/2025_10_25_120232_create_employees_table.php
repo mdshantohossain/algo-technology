@@ -14,16 +14,17 @@ return new class extends Migration
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->unique('email');
-            $table->unique('phone');
+            $table->string('email')->unique();
+            $table->string('phone')->unique();
             $table->string('designation');
             $table->string('address');
             $table->text('resume');
             $table->float('salary');
             $table->date('joining_date');
-            $table->date('resignation_date');
-            $table->boolean('is_team');
-            $table->boolean('status');
+            $table->date('resignation_date')->nullable();
+            $table->boolean('is_team')->default(0)->comment('0 = No, 1 = Yes');
+            $table->text('image')->nullable();
+            $table->boolean('status')->default(1)->comment('1=active, 0=inactive');
             $table->timestamps();
         });
     }
